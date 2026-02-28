@@ -32,12 +32,18 @@ export const SEQUENCES: FrameSequence[] = [
   {
     id: 4,
     label: "Sequence 4",
-    count: 192,
-    getPath: (i) => `/1080p-webp-split/frame_${String(i).padStart(3, "0")}_delay-0.042s.png`,
+    count: 239,
+    getPath: (i) => `/720-jpg-notupscaled/ezgif-frame-${String(i + 20).padStart(3, "0")}.jpg`,
   },
   {
     id: 5,
     label: "Sequence 5",
+    count: 192,
+    getPath: (i) => `/1080p-webp-split/frame_${String(i).padStart(3, "0")}_delay-0.042s.png`,
+  },
+  {
+    id: 6,
+    label: "Sequence 6",
     count: 240,
     getPath: (i) => `/1080p-video-jpg/ezgif-frame-${String(i + 1).padStart(3, "0")}.jpg`,
   },
